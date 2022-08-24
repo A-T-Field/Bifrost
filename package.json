@@ -1,0 +1,38 @@
+{
+    "name": "bifrost",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "description": "",
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc --noEmit && vite build",
+        "preview": "vite preview",
+        "test": "vitest",
+        "coverage": "vitest run --coverage"
+    },
+    "dependencies": {
+        "vue": "^3.2.37"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^3.0.3",
+        "typescript": "^4.6.4",
+        "unocss": "^0.45.12",
+        "unplugin-auto-import": "^0.11.2",
+        "unplugin-vue-components": "^0.22.4",
+        "vite": "^3.0.7",
+        "vitest": "^0.22.1",
+        "vue-tsc": "^0.39.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/A-T-Field/Bifrost.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/A-T-Field/Bifrost/issues"
+    },
+    "homepage": "https://github.com/A-T-Field/Bifrost#readme"
+}
