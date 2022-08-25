@@ -3,7 +3,7 @@
  * @Author: maggot-code
  * @Date: 2022-08-24 11:17:04
  * @LastEditors: maggot-code
- * @LastEditTime: 2022-08-25 15:58:03
+ * @LastEditTime: 2022-08-25 16:59:10
  * @Description:
  */
 /// <reference types="vitest" />
@@ -14,6 +14,15 @@ import autoImport from "unplugin-auto-import/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    resolve: {
+        extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx", ".json", ".proto"],
+        dedupe: ["vue"],
+        alias: {
+            "@": resolve(__dirname, "src"),
+            "@pkg": resolve(__dirname, "pkg"),
+        },
+        preserveSymlinks: false,
+    },
     plugins: [
         vue(),
         autoImport({
