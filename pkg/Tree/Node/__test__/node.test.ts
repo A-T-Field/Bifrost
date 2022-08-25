@@ -3,13 +3,22 @@
  * @Author: maggot-code
  * @Date: 2022-08-25 16:49:43
  * @LastEditors: maggot-code
- * @LastEditTime: 2022-08-25 17:03:33
+ * @LastEditTime: 2022-08-25 18:08:54
  * @Description:
  */
-import { it } from "vitest";
 import TestData from "@pkg/Tree/json/v1.test.json";
+import { describe, it } from "vitest";
+import { NIL, parse, version, validate, v4 } from "uuid";
 
-it("node", () => {
-    console.log("node");
-    console.log(TestData);
+const id = v4();
+
+describe("Node", () => {
+    it("test", () => {
+        console.log(TestData);
+        console.log(id);
+        console.log(NIL);
+        console.log(parse(id));
+        console.log(version(id));
+        console.log(validate(id), validate("123"));
+    });
 });

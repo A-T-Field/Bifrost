@@ -14,10 +14,12 @@
         "coverage": "vitest run --coverage"
     },
     "dependencies": {
+        "ua-parser-js": "^1.0.2",
         "uuid": "^8.3.2",
         "vue": "^3.2.37"
     },
     "devDependencies": {
+        "@types/ua-parser-js": "^0.7.36",
         "@types/uuid": "^8.3.4",
         "@vitejs/plugin-vue": "^3.0.3",
         "@vitest/coverage-c8": "^0.22.1",

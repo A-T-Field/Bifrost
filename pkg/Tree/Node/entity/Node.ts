@@ -1,9 +1,9 @@
 /*
- * @FilePath: \Bifrost\pkg\Tree\entity\Node.ts
+ * @FilePath: \Bifrost\pkg\Tree\Node\entity\Node.ts
  * @Author: maggot-code
  * @Date: 2022-08-25 14:46:40
  * @LastEditors: maggot-code
- * @LastEditTime: 2022-08-25 15:49:40
+ * @LastEditTime: 2022-08-25 17:28:57
  * @Description:
  */
 export type Key = string | number;
@@ -19,6 +19,7 @@ export interface TreeNode<R extends RawNode = RawNode> {
     readonly key: Key;
     index: number;
     level: number;
+    sort: number;
     rawNode: R;
     // 状态属性
     skip: boolean;
@@ -28,8 +29,9 @@ export interface TreeNode<R extends RawNode = RawNode> {
     unusable: boolean;
     // 关系属性
     parent: TreeNode<R> | null;
-    children: Array<TreeNode<R>>;
     siblings: Array<TreeNode<R>>;
+    children: Array<TreeNode<R>>;
+    childNumber: number;
     isLeaf: boolean;
     isFirstChild: boolean;
     isLastChild: boolean;
