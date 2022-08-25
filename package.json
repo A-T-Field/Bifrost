@@ -14,10 +14,12 @@
         "coverage": "vitest run --coverage"
     },
     "dependencies": {
+        "uuid": "^8.3.2",
         "vue": "^3.2.37"
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^3.0.3",
+        "@vitest/coverage-c8": "^0.22.1",
         "@vitest/ui": "^0.22.1",
         "typescript": "^4.6.4",
         "unocss": "^0.45.12",
