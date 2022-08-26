@@ -22,6 +22,7 @@
         "declarationMap": false,
         "isolatedModules": true,
         "suppressImplicitAnyIndexErrors": true,
+        "strictPropertyInitialization": false,
         "lib": [
             "ESNext",
             "DOM"
