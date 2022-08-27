@@ -31,6 +31,9 @@
             "./node_modules/@types/",
             "./types"
         ],
+        "types": [
+            "vitest/globals"
+        ],
         "paths": {
             "@/*": [
                 "src/*"
@@ -45,9 +48,11 @@
         "src/**/*.d.ts",
         "src/**/*.tsx",
         "src/**/*.vue",
+        "src/**/*.json",
         "pkg/**/*.ts",
         "pkg/**/*.d.ts",
         "pkg/**/*.test.ts",
+        "pkg/**/*.json",
     ],
     "references": [
         {

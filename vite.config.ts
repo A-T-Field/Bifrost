@@ -1,9 +1,9 @@
 /*
- * @FilePath: \Bifrost\vite.config.ts
+ * @FilePath: /Bifrost/vite.config.ts
  * @Author: maggot-code
  * @Date: 2022-08-24 11:17:04
  * @LastEditors: maggot-code
- * @LastEditTime: 2022-08-25 16:59:10
+ * @LastEditTime: 2022-08-28 01:23:12
  * @Description:
  */
 /// <reference types="vitest" />
@@ -32,6 +32,7 @@ export default defineConfig({
     ],
     test: {
         globals: true,
+        environment:"jsdom",
         alias: {
             "@": resolve(__dirname, "src"),
             "@pkg": resolve(__dirname, "pkg"),

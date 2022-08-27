@@ -1,9 +1,9 @@
 /*
- * @FilePath: \Bifrost\pkg\Tree\__test__\node.test.ts
+ * @FilePath: /Bifrost/pkg/Tree/__test__/node.test.ts
  * @Author: maggot-code
  * @Date: 2022-08-26 16:50:14
  * @LastEditors: maggot-code
- * @LastEditTime: 2022-08-26 17:54:11
+ * @LastEditTime: 2022-08-28 01:39:13
  * @Description:
  */
 import { describe, it } from "vitest";
@@ -13,7 +13,7 @@ import v2 from "@pkg/Tree/json/v2.test.json";
 import v3 from "@pkg/Tree/json/v3.test.json";
 
 describe("Test Node", () => {
-    it("node entity", () => {
+    it.skip("node entity", () => {
         console.log("node entity");
         console.log(uuidv4());
     });
