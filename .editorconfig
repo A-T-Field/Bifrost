@@ -10,7 +10,7 @@ indent_style = space # 缩进风格 （tab | space）
 indent_size = 4 # 缩进大小
 insert_final_newline = true # 始终在文件末尾插入一个新行
 trim_trailing_whitespace = true # 去除行首的任意空白字符
-max_line_length = 80 # 一行最大字符数
+max_line_length = 200 # 一行最大字符数
 
 [*.{yml,yaml,json}] # 表示在 yml | yaml | json 文件下适用的规则
 indent_style = space
