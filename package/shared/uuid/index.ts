@@ -3,7 +3,7 @@
  * @Author: maggot-code
  * @Date: 2022-08-31 16:03:46
  * @LastEditors: maggot-code
- * @LastEditTime: 2022-08-31 18:05:00
+ * @LastEditTime: 2022-08-31 18:06:05
  * @Description:
  */
 import { v4 as uuidv4 } from "uuid";
@@ -27,4 +27,5 @@ export function useUUID(): UUID {
     };
 }
 
-export default {};
+export const uuid = useUUID;
+export default useUUID;

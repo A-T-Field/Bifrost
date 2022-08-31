@@ -3,11 +3,15 @@
  * @Author: maggot-code
  * @Date: 2022-08-31 17:14:44
  * @LastEditors: maggot-code
- * @LastEditTime: 2022-08-31 17:55:58
+ * @LastEditTime: 2022-08-31 18:06:42
  * @Description:
  */
-describe("aa", () => {
-    test("bb", () => {
-        expect(1 + 1).toBe(2);
+import { uuid } from "@pkg/shared/uuid";
+
+describe("UUID", () => {
+    test("create", () => {
+        const uid = uuid();
+        console.log(uid);
+        expect(uid);
     });
 });
