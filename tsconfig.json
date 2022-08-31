@@ -20,7 +20,7 @@
         "removeComments": true,
         "declaration": true,
         "declarationMap": false,
-        "isolatedModules": true,
+        "isolatedModules": false,
         "suppressImplicitAnyIndexErrors": true,
         "strictPropertyInitialization": false,
         "lib": [
