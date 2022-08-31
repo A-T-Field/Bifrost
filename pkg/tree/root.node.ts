@@ -3,18 +3,19 @@
  * @Author: maggot-code
  * @Date: 2022-08-30 14:56:10
  * @LastEditors: maggot-code
- * @LastEditTime: 2022-08-30 15:44:29
+ * @LastEditTime: 2022-08-31 14:22:16
  * @Description:
  */
-import { RootNode } from "./interface";
-import { toKind } from "./shared";
-import { merge } from "@pkg/shared/merge";
 import { v4 as uuidv4 } from "uuid";
+import { KindNode } from "./enum";
+import { RootNode } from "./interface";
 
-export function setupRootNode(): RootNode {
+const kind = KindNode.ROOT_NODE;
+
+export function createRootNode(): RootNode {
     const key = uuidv4();
 
-    return {};
+    return { kind, key };
 }
 
-export default setupRootNode;
+export default createRootNode;
