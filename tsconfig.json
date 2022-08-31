@@ -39,7 +39,7 @@
                 "src/*"
             ],
             "@pkg/*": [
-                "pkg/*"
+                "package/*"
             ]
         },
     },
@@ -50,10 +50,10 @@
         "src/**/*.tsx",
         "src/**/*.vue",
         "src/**/*.json",
-        "pkg/**/*.ts",
-        "pkg/**/*.d.ts",
-        "pkg/**/*.test.ts",
-        "pkg/**/*.json",
+        "package/**/*.ts",
+        "package/**/*.d.ts",
+        "package/**/*.test.ts",
+        "package/**/*.json",
     ],
     "references": [
         {

@@ -3,7 +3,7 @@
  * @Author: maggot-code
  * @Date: 2022-08-24 11:17:04
  * @LastEditors: maggot-code
- * @LastEditTime: 2022-08-31 15:54:51
+ * @LastEditTime: 2022-08-31 16:01:32
  * @Description:
  */
 /// <reference types="vitest" />
@@ -21,7 +21,7 @@ export default defineConfig({
         dedupe: ["vue"],
         alias: {
             "@": resolve(__dirname, "src"),
-            "@pkg": resolve(__dirname, "pkg"),
+            "@pkg": resolve(__dirname, "package"),
         },
         preserveSymlinks: false,
     },
@@ -44,7 +44,7 @@ export default defineConfig({
         environment: "jsdom",
         alias: {
             "@": resolve(__dirname, "src"),
-            "@pkg": resolve(__dirname, "pkg"),
+            "@pkg": resolve(__dirname, "package"),
         },
     },
 });
