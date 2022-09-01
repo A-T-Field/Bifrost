@@ -3,7 +3,7 @@
  * @Author: maggot-code
  * @Date: 2022-09-01 23:42:05
  * @LastEditors: maggot-code
- * @LastEditTime: 2022-09-02 00:41:03
+ * @LastEditTime: 2022-09-02 00:43:14
  * @Description: 
  */
 import {
@@ -13,7 +13,7 @@ import {
     hasUUID,
     toClean,
     toFormat
-} from "@pkg/shared/uuid";
+} from "../index";
 
 describe("UUID", () => {
     const uid = uuid();
