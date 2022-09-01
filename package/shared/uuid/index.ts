@@ -3,7 +3,7 @@
  * @Author: maggot-code
  * @Date: 2022-09-01 22:58:08
  * @LastEditors: maggot-code
- * @LastEditTime: 2022-09-02 00:39:50
+ * @LastEditTime: 2022-09-02 00:48:52
  * @Description: 
  * 91333e2a-1929-41ef-a65b-e102bfa3e3cf
  * 00000000-0000-0000-0000-000000000000
@@ -36,7 +36,7 @@ export function hasUUID(uuid: UUID): HasUUID {
 export function toClean(uuid: UUID): UUIDValue {
     const [value,error] = hasUUID(uuid);
 
-    if (error) console.warn(`${uuid} is not a UUID`);
+    if (!error) console.warn(`${uuid} is not a UUID`);
 
     return value.split("-").join("");
 }
@@ -44,7 +44,7 @@ export function toClean(uuid: UUID): UUIDValue {
 export function toFormat(uuid: UUID): UUIDValue {
     const [value,error] = hasUUID(uuid);
 
-    if (error) console.warn(`${uuid} is not a UUID`);
+    if (!error) console.warn(`${uuid} is not a UUID`);
 
     return value.replace(/^(.{8})(.{4})(.{4})(.{4})(.{12})$/, "$1-$2-$3-$4-$5");
 }
