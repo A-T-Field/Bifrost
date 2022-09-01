@@ -10,6 +10,7 @@
         "preview": "vite preview",
         "test": "vitest",
         "test:ui": "vitest --ui",
+        "test:up": "vitest --update",
         "test:run": "vitest run",
         "coverage": "vitest run --coverage"
     },
@@ -17,7 +18,7 @@
         "lodash-es": "^4.17.21",
         "ua-parser-js": "^1.0.2",
         "uuid": "^8.3.2",
-        "vue": "^3.2.37"
+        "vue": "^3.2.38"
     },
     "devDependencies": {
         "@types/lodash-es": "^4.17.6",
