@@ -3,7 +3,7 @@
  * @Author: maggot-code
  * @Date: 2022-08-24 11:17:04
  * @LastEditors: maggot-code
- * @LastEditTime: 2022-08-31 16:01:32
+ * @LastEditTime: 2022-09-23 10:53:49
  * @Description:
  */
 /// <reference types="vitest" />
@@ -12,6 +12,10 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import autoImport from "unplugin-auto-import/vite";
 
+const alias = {
+    "@": resolve(__dirname, "src"),
+    "@pkg": resolve(__dirname, "package"),
+};
 const importsLodash = ["isArray", "toArray", "cloneDeep", "merge"];
 
 // https://vitejs.dev/config/
@@ -19,10 +23,7 @@ export default defineConfig({
     resolve: {
         extensions: [".mjs", ".js", ".jsx", ".ts", ".tsx", ".json", ".proto"],
         dedupe: ["vue"],
-        alias: {
-            "@": resolve(__dirname, "src"),
-            "@pkg": resolve(__dirname, "package"),
-        },
+        alias,
         preserveSymlinks: false,
     },
     plugins: [
@@ -42,9 +43,6 @@ export default defineConfig({
     test: {
         globals: true,
         environment: "jsdom",
-        alias: {
-            "@": resolve(__dirname, "src"),
-            "@pkg": resolve(__dirname, "package"),
-        },
+        alias,
     },
 });
